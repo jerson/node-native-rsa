@@ -1,0 +1,6 @@
+.project
+.settings
+docs/
+src/
+lib/
+*.iml

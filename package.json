@@ -1,0 +1,31 @@
+{
+  "name": "native-rsa",
+  "version": "0.1.0",
+  "description": "library for use RSA",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "homepage": "https://github.com/jerson/node-native-rsa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerson/node-native-rsa"
+  },
+  "keywords": [
+    "rsa",
+    "fast"
+  ],
+  "author": "Gerson Alexander Pardo Gamez  <jeral17@gmail.com>",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/ffi": "^0.2.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "ffi": "^2.3.0"
+  }
+}
