@@ -1,4 +1,4 @@
-import ffi from 'ffi-napi';
+const ffi =  require('ffi-napi');
 
 const library = ffi.Library(__dirname + '/../native/rsa.so', {
   Hash: ['string', ['string', 'string']],
