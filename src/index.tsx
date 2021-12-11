@@ -1,4 +1,4 @@
-import ffi from 'ffi';
+import ffi from 'ffi-napi';
 
 const library = ffi.Library(__dirname + '/../native/rsa.so', {
   Hash: ['string', ['string', 'string']],
@@ -22,7 +22,7 @@ export declare type RSABits = 512 | 1024 | 2048 | 4096;
 
 export default class NativeRSA {
   static async hash(message: string, name: RSAHash): Promise<string> {
-    return library.Hash(message, name);
+    return library.Hash(message, name) || '';
   }
   static async decryptOAEP(
     message: string,
@@ -31,7 +31,7 @@ export default class NativeRSA {
     pkcs12: string,
     passphrase: string
   ): Promise<string> {
-    return library.DecryptOAEP(message, label, hashName, pkcs12, passphrase);
+    return library.DecryptOAEP(message, label, hashName, pkcs12, passphrase)  || '';
   }
   static async verifyPSS(
     signature: string,

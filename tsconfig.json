@@ -1,10 +1,24 @@
 {
   "compilerOptions": {
-    "declaration": true ,
+    "declaration": true,
     "outDir": "./lib",
-    "strict": true ,
+    "lib": ["esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "error",
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noStrictGenericChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
-    "esModuleInterop": true 
+    "strict": true,
+    "target": "esnext"
   }
 }
