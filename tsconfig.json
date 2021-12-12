@@ -2,8 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "outDir": "./lib",
-    "lib": ["esnext"],
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
@@ -19,6 +18,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "es6"
   }
 }
